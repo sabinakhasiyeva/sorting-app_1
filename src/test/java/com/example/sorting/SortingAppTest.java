@@ -35,7 +35,6 @@ public class SortingAppTest {
     public void testSortingApp() {
         String[] args = Arrays.stream(input).mapToObj(String::valueOf).toArray(String[]::new);
         SortingApp.main(args);
-        ass
         // No assertion needed as sorting happens in-place in the main method
     }
 }
