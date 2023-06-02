@@ -13,7 +13,11 @@ public class SortingApp {
 
 
     public static void main(String[] args) {
-        if (args.length == 0) {
+        if (args.length>10) {
+            throw new IllegalArgumentException("There are more than 10 elements");
+        }
+
+        else if (args.length == 0) {
             System.out.println("No arguments provided.");
             return;
         }
